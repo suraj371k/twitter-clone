@@ -9,7 +9,7 @@ export const getNotifications = async (req , res) => {
             path: "from",
             select: "username , profileImg"
         });
-
+ 
         await Notifications.updateMany({to: userId} , {read: true})
         res.status(200).json(notifications)
     } catch (error) {
