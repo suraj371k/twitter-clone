@@ -84,7 +84,7 @@ const NotificationPage = () => {
                     <img
                       src={
                         notification.from.profileImg ||
-                        "/avatar-placeholder.png"
+                        "/emptyCoverImage.webp"
                       }
                     />
                   </div>
